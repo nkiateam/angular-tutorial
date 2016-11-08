@@ -5,7 +5,7 @@
 Just clone the repo and start hacking:
 
 ```shell
-$ git clone https://github.com/elle510/react-tutorial.git
+$ git clone https://github.com/nkiateam/angular-tutorial.git
 $ cd angular-tutorial
 $ npm install                   # Install Node.js components listed in ./package.json
 $ npm start                     # Compile and launch
