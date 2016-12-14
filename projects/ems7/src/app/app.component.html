@@ -1,0 +1,37 @@
+<!--
+<section>
+    <nav>
+        <a routerLink="/tasks">Task List</a>
+        <a routerLink="/about">About</a>
+    </nav>
+    <router-outlet></router-outlet>
+</section>
+-->
+
+<div class="wrapper">
+    <div class="header">
+        POLESTAR EMS7 with Angular2
+    </div>
+
+    <div class="main">
+        <div class="left-side">
+            <ul>
+                <li><a routerLink="/config">구성</a></li>
+                <li><a routerLink="/alert">알람</a></li>
+            </ul>
+        </div>
+        <div class="left-frame">
+            그룹리스트(1레벨까지)
+        </div>
+
+        <div class="center-frame">
+            <router-outlet></router-outlet>
+        </div>
+        
+    </div>
+
+    <div class="footer">
+        Footer
+    </div>
+
+</div>
