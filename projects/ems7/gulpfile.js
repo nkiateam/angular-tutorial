@@ -28,7 +28,8 @@ gulp.task('tslint', () => {
 /**
  * Compile TypeScript sources and create sourcemaps in build directory.
  */
-gulp.task("compile", ["tslint"], () => {
+//gulp.task("compile", ["tslint"], () => {
+gulp.task("compile", () => {    
     let tsResult = gulp.src("src/**/*.ts")
         .pipe(sourcemaps.init())
         .pipe(tsc(tsProject));

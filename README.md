@@ -28,3 +28,20 @@ http://localhost:3000/test/index.html
 ├── package.json                # The list of 3rd party libraries and utilities
 └── webpack.config.js           # webpack module builder config file
 ```
+
+### Angular 주요 기능
+- Module
+- Metadata
+- Decorator
+- Component
+- Template
+- Data Binding
+- Directive
+- Service
+- Dependency Injection
+- Life Cycle
+
+### Angular 개발 방법
+- TypeScript
+- Dart
+- Javascript

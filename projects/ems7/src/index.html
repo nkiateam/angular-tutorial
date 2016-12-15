@@ -5,6 +5,36 @@
 
     <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.css" />
 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="/common-libs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/common-libs/puf/libs/styles/kendo/kendo.common.min.css" />
+    <link rel="stylesheet" href="/common-libs/puf/libs/styles/kendo/kendo.bootstrap.min.css" />
+
+    <style>
+		.critical {
+            background: #FF5454;
+            color: #3E444C;
+            font-weight: 500;
+            -webkit-animation: blink 10s linear infinite;
+		}
+        @-webkit-keyframes blink {
+            0% { background-color: #FF5454; }
+            33% { background-color: yellow; }
+            /*66% { background-color: blue; }*/
+            100% { background-color: #FF5454; } 
+            /*
+            from { background-color: red;}
+            to {background-color: green;}
+            */ 
+        }
+
+		.clear {
+			background: #abf218;
+            color: #3E444C;
+            font-weight: 500;
+		}
+	</style>
+
     <!-- 1. Load libraries -->
     <script src="libs/jquery/dist/jquery.min.js"></script>
     <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
@@ -22,6 +52,20 @@
         System.import('app')
                 .then(null, console.error.bind(console));
     </script>
+
+    <script type="text/javascript" src="/common-libs/js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="/common-libs/js/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="/common-libs/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/common-libs/js/raphael.min.js"></script>
+    <script type="text/javascript" src="/common-libs/js/jquery.coachy.js"></script>
+
+    <script type="text/javascript" src="/common-libs/puf/libs/kendo.all.min.js"></script>
+    <script type="text/javascript" src="/common-libs/puf/i18n/ps-locale_ko.min.js"></script>
+    <script type="text/javascript" src="/common-libs/puf/scripts/react-puf.min.js"></script>
+
+	  <script type="text/javascript" src="/common-libs/js/kendo/cultures/kendo.culture.ko-KR.js"></script>
+
+	  <script type="text/javascript" src="/common-libs/fine-uploader/fine-uploader.min.js"></script>
 
 </head>
 

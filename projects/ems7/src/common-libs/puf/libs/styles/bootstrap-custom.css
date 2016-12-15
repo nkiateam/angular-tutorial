@@ -1,0 +1,19 @@
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.classWithPad { padding:0px 0px 0px 5px !important; }
+
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.selectMargin { margin:0px !important; }
+
+.mycontent-left {
+  border-right: 1px solid #333;
+  padding-right: 10px;     
+}

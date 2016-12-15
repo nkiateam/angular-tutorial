@@ -1,0 +1,3516 @@
+/* Main Layout
+----------------------------------*/
+/* {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+}
+*/
+body {
+  /*
+    background-color: #fff;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #333;
+    font-size: 14px;
+    overflow: hidden;
+    */
+}
+/* wrapper
+----------------------------------*/
+.wrapper {
+  /*
+    margin: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border: 1px solid;
+    */
+}
+/* header area
+----------------------------------*/
+.header {
+  /*
+    height: 50px;
+    margin: 0;
+    border: 1px solid;
+    */
+}
+/* main area
+----------------------------------*/
+.main {
+  /*margin: 10px;
+    border: 1px solid;*/
+}
+.main.k-splitter {
+  /*border-style: none;*/
+}
+.left-frame {
+  /*width: 350px;
+    border: 1px solid;*/
+}
+.left-frame .left-content .panel-box > .panel.panel-left-frame > .panel-heading {
+  position: fixed;
+  left: 16px;
+  top: 56px;
+  z-index: 1;
+}
+.left-frame .left-content .panel-box > .panel.panel-left-frame > .panel-body {
+  position: absolute;
+  top: 40px;
+}
+.center-frame > .content {
+  overflow-x: hidden;
+}
+.k-animation-container,
+.k-widget,
+.k-widget *,
+.k-animation-container *,
+.k-widget *:before,
+.k-animation-container *:after,
+.k-block .k-header,
+.k-list-container {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+/*
+.k-button,
+.k-textbox,
+.k-autocomplete,
+div.k-window-content,
+.k-tabstrip > .k-content > .km-scroll-container,
+.k-block,
+.k-edit-cell .k-widget,
+.k-grid-edit-row .k-widget,
+.k-grid-edit-row .text-box,
+.km-actionsheet > li,
+.km-shim {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*/
+/* Responsive 
+----------------------------------*/
+html {
+  background-color: #607080;
+}
+body {
+  font-family: '맑은 고딕', 'Malgun Gothic', '돋움', Dotum, '굴림', Gulim, Arial, Helvetica, sans-serif;
+  color: #222;
+  font-size: 13px;
+  overflow: hidden;
+}
+/* wrapper
+----------------------------------*/
+.wrapper {
+  background-color: #eee;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  margin: 10px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+/* header area
+----------------------------------*/
+.header {
+  background-color: #8ca4bd;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.025, #c5d3e0), color-stop(0.03, #a3b8cc), color-stop(1, #7d98b2));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(#c5d3e0 2.5%, #a3b8cc 3%, #7d98b2 98%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(#c5d3e0 2.5%, #a3b8cc 3%, #7d98b2 98%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(#c5d3e0 2.5%, #a3b8cc 3%, #7d98b2 98%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(#c5d3e0 2.5%, #a3b8cc 3%, #7d98b2 98%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(#c5d3e0 2.5%, #a3b8cc 3%, #7d98b2 98%);
+  /* Standard syntax */
+  /* filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#a3b8cc', EndColorStr='#7d98b2'); /* IE6,IE7 */
+  /* -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#a3b8cc', EndColorStr='#7d98b2')"; /* IE8 */
+  -webkit-border-radius: 6px 6px 0 0;
+  -moz-border-radius: 6px 6px 0 0;
+  -o-border-radius: 6px 6px 0 0;
+  border-radius: 6px 6px 0 0;
+  height: 40px;
+}
+.logo {
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+  display: inline-block;
+  padding-left: 15px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+.logo img {
+  padding-bottom: 2px;
+}
+/* main area
+----------------------------------*/
+.main {
+  margin-left: 5px;
+  margin-right: 7px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /*border: 1px solid;*/
+}
+.main.k-splitter {
+  border-style: none;
+}
+.k-block,
+.k-widget {
+  background-color: transparent;
+}
+.k-button,
+.k-widget {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.k-splitbar {
+  background-color: transparent;
+}
+.k-splitbar-horizontal .k-collapse-prev,
+.k-splitbar-horizontal .k-expand-next {
+  background-position: -7px -174px;
+}
+.k-splitbar-horizontal .k-collapse-next,
+.k-splitbar-horizontal .k-expand-prev {
+  background-position: -6px -142px;
+}
+.k-splitbar-horizontal .k-resize-handle {
+  background-position: -166px -6px;
+}
+.left-frame {
+  background-color: #fff;
+  border: 1px solid #aaa;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  /* modal popup error */
+}
+.left-frame .left-content {
+  height: 100%;
+}
+.left-frame .left-content > .panel-box {
+  height: 100%;
+}
+.left-frame .left-content > .panel-box > .panel {
+  height: 99.5%;
+  margin-bottom: 0;
+}
+div.k-treeview {
+  overflow: hidden;
+}
+.center-frame {
+  background-color: #fff;
+  border: 1px solid #aaa;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+.center-frame > .content {
+  height: 100%;
+}
+.page-header {
+  height: 40px;
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+  padding: 8px 6px 8px 8px;
+}
+/* footer area
+----------------------------------*/
+.page-footer {
+  height: 45px;
+  position: fixed;
+  bottom: 16px;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  -o-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+}
+/* Responsive 
+----------------------------------*/
+/* Phones
+----------------------------------*/
+/* Tablets
+----------------------------------*/
+/* Phones & Tablets 
+----------------------------------*/
+/* panel-default  //left panel
+----------------------------------*/
+.panel {
+  margin-bottom: 0;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.panel-left-frame {
+  border-color: #ccc;
+}
+.panel-left-frame > .panel-heading {
+  color: #222;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.panel-left-frame > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ccc;
+}
+.panel-left-frame > .panel-heading .badge {
+  color: #222;
+  background-color: transparent;
+}
+.panel-left-frame > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ccc;
+}
+.panel-heading {
+  height: 40px;
+  padding: 8px 6px 8px 8px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: inherit;
+  line-height: 20px;
+}
+.panel-body {
+  padding: 6px;
+}
+/* Skin
+----------------------------------*/
+/*
+example)
+.vspace-2 {
+  .vspace(2px, 1px);
+}
+*/
+/*
+example)
+.hspace-2 {
+  .hspace(2px, 1px);
+}
+*/
+/* 
+position 기본값은 static이다.
+
+example)
+.right-bottom-position-200 {
+  .right-bottom-position(fixed);
+  width: 200px;
+}
+*/
+/* 레이아웃 컴포넌트 할때 아래 스타일이 필요하다.
+.label {
+  top: 0;
+  left: 0;
+  padding: 0 3px 3px 0;
+}
+
+.endlabel {
+  right: 0;
+  bottom: 0;
+  padding: 3px 0 0 3px;
+}
+
+.border-red-2 > .label, .border-red-2 > .endlabel{
+  color: white;
+  background-color: #D64078;
+}
+*/
+/* Bootstrap (override)
+----------------------------------*/
+/* bootstrap.css 1616 line */
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+/* Bootstrap 관련 추가할 요소
+----------------------------------*/
+/* bootstrap.css 1099 line */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #004488;
+  text-decoration: underline;
+}
+/* bootstrap.css 2274 line */
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding: 3px 6px;
+  line-height: 21px;
+  vertical-align: top;
+  border-top: 1px solid #ccc;
+}
+/* bootstrap.css 2306 line */
+.table-bordered {
+  border: 1px solid #bbb;
+}
+/* bootstrap.css 2309 line */
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  border: 1px solid #ccc;
+}
+/* bootstrap.css 2317 line */
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td {
+  color: #333;
+  padding: 4px 6px 7px 6px;
+  border-bottom-width: 1px;
+  border: 1px solid #bbb;
+  background-color: #f6f6f6;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #fff), color-stop(97%, #eee));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #fff 3%, #eee 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #fff 3%, #eee 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #fff 3%, #eee 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #fff 3%, #eee 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #fff 3%, #eee 97%);
+  /* Standard syntax */
+}
+/* bootstrap.css 2509 line */
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+/* bootstrap.css 2551 line */
+.form-control {
+  display: block;
+  width: 100%;
+  height: 30px;
+  padding: 1px 6px 4px 6px;
+  font-size: 13px;
+  line-height: 17px;
+  /* 1.53846153 */
+  color: #222;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #aaa;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.form-control:focus {
+  border-color: #0077ee;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.form-control::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #999;
+}
+.form-control::-webkit-input-placeholder {
+  color: #999;
+}
+.form-control::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+  background-color: #eee;
+  opacity: 1;
+}
+.form-control[disabled],
+fieldset[disabled] .form-control {
+  cursor: not-allowed;
+}
+textarea.form-control {
+  height: auto;
+  padding-top: 4px;
+}
+input[type="search"] {
+  -webkit-appearance: none;
+}
+/* bootstrap.css 2605 line */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type="date"].form-control,
+  input[type="time"].form-control,
+  input[type="datetime-local"].form-control,
+  input[type="month"].form-control {
+    line-height: 30px;
+  }
+  input[type="date"].input-sm,
+  input[type="time"].input-sm,
+  input[type="datetime-local"].input-sm,
+  input[type="month"].input-sm,
+  .input-group-sm input[type="date"],
+  .input-group-sm input[type="time"],
+  .input-group-sm input[type="datetime-local"],
+  .input-group-sm input[type="month"] {
+    line-height: 18px;
+  }
+  input[type="date"].input-lg,
+  input[type="time"].input-lg,
+  input[type="datetime-local"].input-lg,
+  input[type="month"].input-lg,
+  .input-group-lg input[type="date"],
+  .input-group-lg input[type="time"],
+  .input-group-lg input[type="datetime-local"],
+  .input-group-lg input[type="month"] {
+    line-height: 42px;
+  }
+}
+/* bootstrap.css 2633 line */
+.form-group {
+  margin-bottom: 15px;
+}
+.form-control-static {
+  min-height: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+}
+/* bootstrap.css 2967 line */
+.form-horizontal .radio,
+.form-horizontal .checkbox,
+.form-horizontal .radio-inline,
+.form-horizontal .checkbox-inline {
+  padding-top: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.form-horizontal .radio,
+.form-horizontal .checkbox {
+  min-height: 27px;
+}
+.form-horizontal .form-group {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 768px) {
+  .form-horizontal .control-label {
+    padding-top: 5px;
+    margin-bottom: 0;
+    text-align: right;
+    color: #0066cc;
+    white-space: nowrap;
+  }
+}
+.control-label {
+  padding-top: 5px;
+  margin-bottom: 0;
+  text-align: right;
+  color: #0066cc;
+  white-space: nowrap;
+}
+.control-label-group {
+  padding-top: 5px;
+  margin-bottom: 0;
+  text-align: left;
+  color: #333;
+  white-space: nowrap;
+}
+.form-horizontal .form-group .control-label-group {
+  padding-left: 35px;
+}
+.row .control-label-group {
+  padding-left: 20px;
+}
+.report-info .form-group {
+  margin-right: -15px;
+  margin-left: -15px;
+  line-height: 30px;
+}
+.form-horizontal .form-group .col-md-2.control-label,
+.row .col-md-2.control-label {
+  width: 12%;
+}
+.form-horizontal .form-group .col-md-3.control-label,
+.row .col-md-3.control-label {
+  width: 20.33333333%;
+}
+/* bootstrap.css 2698 line */
+.form-control-static {
+  min-height: 30px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-bottom: 0;
+}
+.form-control-static.input-lg,
+.form-control-static.input-sm {
+  padding-right: 0;
+  padding-left: 0;
+}
+.input-sm {
+  height: 24px;
+  padding: 1px 6px 3px 6px;
+  font-size: 13px;
+  line-height: 19px;
+  border-radius: 2px;
+}
+select.input-sm {
+  height: 24px;
+  line-height: 24px;
+}
+textarea.input-sm,
+select[multiple].input-sm {
+  height: auto;
+}
+.form-group-sm .form-control {
+  height: 24px;
+  padding: 4px 8px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 2px;
+}
+.form-group-sm select.form-control {
+  height: 24px;
+  line-height: 24px;
+}
+.form-group-sm textarea.form-control,
+.form-group-sm select[multiple].form-control {
+  height: auto;
+}
+.form-group-sm .form-control-static {
+  height: 24px;
+  min-height: 24px;
+  padding: 4px 8px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.input-lg {
+  height: 42px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 2px;
+}
+select.input-lg {
+  height: 42px;
+  line-height: 42px;
+}
+textarea.input-lg,
+select[multiple].input-lg {
+  height: auto;
+}
+.form-group-lg .form-control {
+  height: 42px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 2px;
+}
+.form-group-lg select.form-control {
+  height: 42px;
+  line-height: 42px;
+}
+.form-group-lg textarea.form-control,
+.form-group-lg select[multiple].form-control {
+  height: auto;
+}
+.form-group-lg .form-control-static {
+  height: 42px;
+  min-height: 38px;
+  padding: 11px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+}
+/* bootstrap.css 2782 line */
+/* bootstrap.css 3005 line */
+.btn {
+  height: 24px;
+  display: inline-block;
+  padding: 0 6px 3px 6px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 0;
+  overflow: hidden;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 19px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn:hover,
+.btn:focus,
+.btn.focus {
+  color: #111;
+  text-decoration: none;
+}
+.btn:active,
+.btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125);
+}
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  opacity: .65;
+}
+a.btn.disabled,
+fieldset[disabled] a.btn {
+  pointer-events: none;
+}
+/* bootstrap.css 5030 line */
+.alert {
+  padding: 10px;
+  margin: 0 10px 15px 10px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+/* bootstrap.css 5061 line */
+.alert-success {
+  color: #0066cc;
+  background-color: #cceeff;
+  border-color: #bbddff;
+}
+.alert-warning {
+  color: #996600;
+  background-color: #fff7cc;
+  border-color: #ffeecc;
+}
+.alert-danger {
+  color: #dd4444;
+  background-color: #ffdddd;
+  border-color: #ffcccc;
+}
+/* bootstrap.css 5872 line */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+/* bootstrap.css 5975 line */
+@media (min-width: 768px) {
+  .modal-dialog {
+    margin: 80px auto;
+  }
+}
+/* bootstrap.css 6036 line */
+.tooltip-inner {
+  border-radius: 3px;
+}
+.form-horizontal {
+  margin-top: 15px;
+}
+/* jquery-ui (override)
+----------------------------------*/
+/* jquery-ui (tabs)
+----------------------------------*/
+/* kendo (override)
+----------------------------------*/
+/* kendo 관련 추가할 요소
+----------------------------------*/
+/* kendo.bootstrap.css 113 line */
+.k-group {
+  border-color: #999;
+}
+.k-group,
+.k-toolbar,
+.k-grouping-header,
+.k-pager-wrap,
+.k-group-footer td,
+.k-grid-footer,
+.k-footer-template td,
+.k-widget .k-status,
+.k-calendar th,
+.k-dropzone-hovered,
+.k-widget.k-popup {
+  background-color: #fff;
+}
+.k-grouping-row td,
+td.k-group-cell,
+.k-resize-handle-inner {
+  background-color: #fff;
+}
+/* kendo.bootstrap.css 241 line */
+.k-block,
+.k-widget,
+.k-popup,
+.k-content,
+.k-toolbar,
+.k-dropdown .k-input {
+  color: #222;
+}
+/* kendo.bootstrap.css 254 line */
+.k-link:link,
+.k-link:visited,
+.k-nav-current.k-state-hover .k-link {
+  color: #0066cc;
+}
+/* text no input validation */
+/* kendo.bootstrap.css 798 line */
+.k-widget .k-tooltip-validation {
+  border-color: transparent;
+  background-color: transparent;
+  color: #f00;
+}
+/* kendo.common.css 6986 line */
+span.k-tooltip {
+  position: static;
+  display: inline-block;
+  border-width: 1px;
+  padding: 1px 5px 0 0;
+}
+/* kendo.common.css 7027 line */
+.k-tooltip-validation .k-warning {
+  vertical-align: text-bottom;
+  margin-right: 0;
+}
+/* kendo.bootstrap.css 891 line */
+/* Shadows */
+.k-widget,
+.k-button {
+  -webkit-box-shadow: none;
+  /* inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); */
+  box-shadow: none;
+  /* inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); */
+}
+.k-slider,
+.k-treeview,
+.k-upload {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.k-state-hover {
+  -webkit-box-shadow: none;
+  /* 0 1px 0 rgba(255, 255, 255, 0.2); */
+  box-shadow: none;
+  /* 0 1px 0 rgba(255, 255, 255, 0.2); */
+}
+.k-autocomplete.k-state-focused,
+.k-dropdown-wrap.k-state-focused,
+.k-picker-wrap.k-state-focused,
+.k-numeric-wrap.k-state-focused {
+  -webkit-box-shadow: none;
+  /* 0 0 7px 0 #76abd9; */
+  box-shadow: none;
+  /* 0 0 7px 0 #76abd9; */
+}
+.k-state-selected {
+  -webkit-box-shadow: none;
+  /* 0 1px 1px rgba(0, 0, 0, 0.075) inset; */
+  box-shadow: none;
+  /* 0 1px 1px rgba(0, 0, 0, 0.075) inset; */
+}
+.k-state-active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.k-grid td.k-state-selected.k-state-focused {
+  background-color: #4e92cd;
+}
+/* kendo.bootstrap.css 1070 line */
+/* Border radius */
+.k-block,
+.k-textbox,
+.k-drag-clue,
+.k-touch-scrollbar,
+.k-window,
+.k-window-titleless .k-window-content,
+.k-window-action,
+.k-inline-block,
+.k-grid .k-filter-options,
+.k-grouping-header .k-group-indicator,
+.k-autocomplete,
+.k-multiselect,
+.k-combobox,
+.k-dropdown,
+.k-dropdown-wrap,
+.k-datepicker,
+.k-timepicker,
+.k-colorpicker,
+.k-datetimepicker,
+.k-notification,
+.k-numerictextbox,
+.k-picker-wrap,
+.k-numeric-wrap,
+.k-colorpicker,
+.k-list-container,
+.k-calendar-container,
+.k-calendar td,
+.k-calendar .k-link,
+.k-treeview .k-in,
+.k-editor-inline,
+.k-tooltip,
+.k-tile,
+.k-slider-track,
+.k-slider-selection,
+.k-upload,
+.k-split-button {
+  border-radius: 2px;
+}
+/* kendo.bootstrap.css 1154 line */
+.k-calendar-container.k-state-border-up,
+.k-list-container.k-state-border-up,
+.k-autocomplete.k-state-border-up,
+.k-multiselect.k-state-border-up,
+.k-dropdown-wrap.k-state-border-up,
+.k-picker-wrap.k-state-border-up,
+.k-numeric-wrap.k-state-border-up,
+.k-window-content,
+.k-filter-menu {
+  border-radius: 2px;
+}
+/* kendo.bootstrap.css 1175 line */
+.k-window-titlebar,
+.k-block > .k-header,
+.k-tabstrip-items .k-item,
+.k-panelbar .k-tabstrip-items .k-item,
+.k-tabstrip-items .k-link,
+.k-calendar-container.k-state-border-down,
+.k-list-container.k-state-border-down,
+.k-autocomplete.k-state-border-down,
+.k-multiselect.k-state-border-down,
+.k-dropdown-wrap.k-state-border-down,
+.k-picker-wrap.k-state-border-down,
+.k-numeric-wrap.k-state-border-down {
+  border-radius: 2px 2px 0 0;
+}
+/* dropdown combobox */
+/* kendo.bootstrap.css 1201 line */
+.k-dropdown-wrap .k-input,
+.k-numeric-wrap .k-input,
+.k-picker-wrap .k-input {
+  border-radius: 2px 0 0 2px;
+}
+/* kendo.bootstrap.css 1226 line */
+.k-dropdown-wrap.k-state-border-down .k-input,
+.k-picker-wrap.k-state-border-down .k-input,
+.k-picker-wrap.k-state-border-down .k-selected-color,
+.k-numeric-wrap.k-state-border-down .k-input {
+  border-radius: 2px 0 0 0;
+}
+/* kendo.bootstrap.css 1238 line */
+.k-datetimepicker .k-select + .k-select,
+.k-dropdown-wrap .k-select,
+.k-list-container.k-state-border-right,
+.k-numeric-wrap .k-select,
+.k-picker-wrap .k-select {
+  border-radius: 0 2px 2px 0;
+}
+/* kendo.bootstrap.css 1444 line */
+.k-dropdown .k-input,
+.k-dropdown .k-state-focused .k-input,
+.k-menu .k-popup {
+  color: #111;
+}
+/* kendo.bootstrap.css 1449 line */
+.k-state-default > .k-select {
+  border-color: #aaa;
+}
+.k-state-hover > .k-select {
+  border-color: #aaa;
+}
+.k-state-focused > .k-select {
+  border-color: #0077ee;
+}
+.k-dropdown .k-state-hover .k-input {
+  color: #000;
+}
+.k-dropdown {
+  background-color: #fff !important;
+}
+/* kendo.bootstrap.css 2018 line */
+.k-list > .k-state-hover {
+  border-color: transparent;
+}
+/* kendo.bootstrap.css 2069 line */
+.k-list .k-state-hover,
+.k-list .k-state-focused,
+.k-list .k-state-highlight,
+.k-list .k-state-selected,
+.k-fieldselector .k-list .k-item,
+.k-list-optionlabel,
+.k-dropzone {
+  border-radius: 2px;
+}
+/* kendo.bootstrap.css 2069 line */
+.k-autocomplete.k-state-default,
+.k-dropdown-wrap.k-state-default,
+.k-multiselect.k-header,
+.k-numeric-wrap.k-state-default,
+.k-picker-wrap.k-state-default {
+  border-color: #aaa;
+}
+.k-autocomplete .k-input,
+.k-autocomplete.k-state-focused .k-input,
+.k-dropdown-wrap .k-input,
+.k-dropdown-wrap.k-state-focused .k-input,
+.k-numeric-wrap.k-state-focused .k-input,
+.k-picker-wrap.k-state-focused .k-input,
+.k-textbox > input {
+  border-color: #aaa;
+}
+/* kendo.bootstrap.css 2136 line */
+.k-picker-wrap.k-state-active.k-state-border-down,
+.k-dropdown-wrap.k-state-active.k-state-border-down,
+.k-numeric-wrap .k-link.k-state-selected,
+.k-pager-numbers.k-state-expanded .k-current-page .k-link {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.125);
+}
+/* kendo.bootstrap.css 2276 line */
+.k-list-container {
+  border-color: #999;
+}
+/* button */
+/* kendo.bootstrap.css 469 line */
+.k-button:focus,
+.k-button.k-state-focused {
+  border-color: #76abd9;
+}
+.k-button:hover,
+.k-button.k-state-hover {
+  color: #333333;
+  border-color: #aeaeae;
+  background-color: #ebebeb;
+}
+.k-button:active,
+.k-button.k-state-active {
+  color: #ffffff;
+  background-color: #ebebeb;
+  border-color: #428bca;
+}
+.k-button:active:hover,
+.k-button.k-state-active:hover {
+  color: #fff;
+  border-color: #285e8e;
+  background-color: #3276b1;
+}
+.k-button:focus:not(.k-state-disabled):not([disabled]) {
+  -webkit-box-shadow: 0 0 7px 0 #76abd9;
+  box-shadow: 0 0 7px 0 #76abd9;
+}
+.k-button:focus:active:not(.k-state-disabled):not([disabled]) {
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125);
+}
+/* kendo.common.css 146 line */
+a.k-button {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none !important;
+}
+/* kendo.common.css 2982 line */
+.k-grid .k-button {
+  margin: 0 2px;
+}
+.k-grid tbody .k-button,
+.k-ie8 .k-grid tbody button.k-button {
+  min-width: 22px;
+}
+.k-grid tbody button.k-button {
+  min-width: 22px;
+  /* for all except IE8 */
+}
+/* kendo.common.css 356 line */
+.k-select .k-i-arrow-s {
+  background-position: -96px -32px;
+}
+/* kendo.common.css 4839 line */
+input.k-textbox,
+textarea.k-textbox {
+  padding: 4px 6px;
+}
+input.k-textbox {
+  height: 30px;
+  text-indent: 0.33em;
+  font-weight: 400;
+  line-height: 17px;
+  color: #222;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #aaa;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* kendo.common.css 2853 line */
+.k-filter-menu .k-button {
+  width: 47.5%;
+  margin: .5em 5% 0 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.k-filter-menu .k-button.k-primary {
+  height: 24px;
+  display: inline-block;
+  padding: 0 6px 3px 6px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 0;
+  overflow: hidden;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 19px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #2299ff;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #44aaff), color-stop(97%, #0088ff));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #44aaff 3%, #0088ff 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #44aaff 3%, #0088ff 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #44aaff 3%, #0088ff 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #44aaff 3%, #0088ff 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #44aaff 3%, #0088ff 97%);
+  /* Standard syntax */
+  border-color: #0077ee;
+}
+.k-filter-menu .k-button.k-primary:focus,
+.k-filter-menu .k-button.k-primary.focus {
+  color: #fff;
+  background-color: #3399ff;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #44aaff), color-stop(97%, #3399ff));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #77bbff 3%, #3399ff 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #77bbff 3%, #3399ff 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #77bbff 3%, #3399ff 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #77bbff 3%, #3399ff 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #77bbff 3%, #3399ff 97%);
+  /* Standard syntax */
+  border-color: #1188ff;
+}
+.k-filter-menu .k-button.k-primary:hover {
+  color: #fff;
+  background-color: #33aaff;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #77ccff), color-stop(97%, #33aaff));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #77ccff 3%, #33aaff 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #77ccff 3%, #33aaff 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #77ccff 3%, #33aaff 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #77ccff 3%, #33aaff 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #77ccff 3%, #33aaff 97%);
+  /* Standard syntax */
+  border-color: #3399ff;
+}
+.k-filter-menu .k-button.k-primary:active,
+.k-filter-menu .k-button.k-primary.active {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+.k-filter-menu .k-button.k-primary:active:hover,
+.k-filter-menu .k-button.k-primary.active:hover,
+.k-filter-menu .k-button.k-primary:active:focus,
+.k-filter-menu .k-button.k-primary.active:focus,
+.k-filter-menu .k-button.k-primary:active.focus,
+.k-filter-menu .k-button.k-primary.active.focus {
+  color: #aabbcc;
+  background-color: #336699;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #7799bb), color-stop(97%, #336699));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #7799bb 3%, #336699 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #7799bb 3%, #336699 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #7799bb 3%, #336699 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #7799bb 3%, #336699 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #7799bb 3%, #336699 97%);
+  /* Standard syntax */
+  border-color: #225588;
+}
+.k-filter-menu .k-button.k-primary:active,
+.k-filter-menu .k-button.k-primary.active {
+  background-image: none;
+}
+.k-filter-menu .k-button.k-primary.disabled:hover,
+.k-filter-menu .k-button.k-primary[disabled]:hover,
+.k-filter-menu .k-button.k-primary.disabled:focus,
+.k-filter-menu .k-button.k-primary[disabled]:focus,
+.k-filter-menu .k-button.k-primary.disabled.focus,
+.k-filter-menu .k-button.k-primary[disabled].focus {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+.k-filter-menu .k-button {
+  height: 24px;
+  display: inline-block;
+  padding: 0 6px 3px 6px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 0;
+  overflow: hidden;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 19px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #111;
+  background-color: #f6f6f6;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #fff), color-stop(97%, #eee));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #fff 3%, #eee 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #fff 3%, #eee 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #fff 3%, #eee 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #fff 3%, #eee 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #fff 3%, #eee 97%);
+  /* Standard syntax */
+  border-color: #999;
+}
+.k-filter-menu .k-button:focus,
+.k-filter-menu .k-button.focus {
+  color: #000;
+  background-color: #deeeff;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #eef6ff), color-stop(97%, #cce5ff));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #eef6ff 3%, #cce5ff 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #eef6ff 3%, #cce5ff 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #eef6ff 3%, #cce5ff 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #eef6ff 3%, #cce5ff 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #eef6ff 3%, #cce5ff 97%);
+  /* Standard syntax */
+  border-color: #88aacc;
+}
+.k-filter-menu .k-button:hover {
+  color: #000;
+  background-color: #ddf3ff;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #f2fbff), color-stop(97%, #cceeff));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #f2fbff 3%, #cceeff 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #f2fbff 3%, #cceeff 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #f2fbff 3%, #cceeff 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #f2fbff 3%, #cceeff 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #f2fbff 3%, #cceeff 97%);
+  /* Standard syntax */
+  border-color: #99bbdd;
+}
+.k-filter-menu .k-button:active,
+.k-filter-menu .k-button.active {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.k-filter-menu .k-button:active:hover,
+.k-filter-menu .k-button.active:hover,
+.k-filter-menu .k-button:active:focus,
+.k-filter-menu .k-button.active:focus,
+.k-filter-menu .k-button:active.focus,
+.k-filter-menu .k-button.active.focus {
+  color: #111;
+  background-color: #c4c4c4;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #ccc), color-stop(97%, #bbb));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #ccc 3%, #bbb 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #ccc 3%, #bbb 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #ccc 3%, #bbb 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #ccc 3%, #bbb 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #ccc 3%, #bbb 97%);
+  /* Standard syntax */
+  border-color: #999;
+}
+.k-filter-menu .k-button:active,
+.k-filter-menu .k-button.active {
+  background-image: none;
+}
+.k-filter-menu .k-button.disabled:hover,
+.k-filter-menu .k-button[disabled]:hover,
+.k-filter-menu .k-button.disabled:focus,
+.k-filter-menu .k-button[disabled]:focus,
+.k-filter-menu .k-button.disabled.focus,
+.k-filter-menu .k-button[disabled].focus {
+  background-color: #fff;
+  border-color: #ccc;
+}
+/* kendo.common.css 4627 line */
+.k-autocomplete .k-input,
+.k-dropdown-wrap .k-input,
+.k-numeric-wrap .k-input,
+.k-picker-wrap .k-input,
+.k-selectbox .k-input,
+.k-textbox > input {
+  height: 28px;
+  line-height: 1.65em;
+  padding: .177em 0;
+  text-indent: .33em;
+  border: 0;
+  margin: 0;
+}
+/* kendo.common.css 4664 line */
+.k-dropdown-wrap .k-select,
+.k-numeric-wrap .k-select,
+.k-picker-wrap .k-select {
+  min-height: 24px;
+  line-height: 1.84615385em;
+  vertical-align: middle;
+  -moz-box-sizing: border-box;
+  text-align: center;
+  width: 1.84615385em;
+  height: 100%;
+}
+/* kendo.common.css 4698 line */
+.k-popup .k-list .k-item,
+.k-fieldselector .k-list .k-item,
+.k-list-optionlabel,
+.k-popup > .k-group-header,
+.k-popup > .k-virtual-wrap > .k-group-header {
+  padding: 2px 5px;
+  font-size: 13px;
+  line-height: 17px;
+  /* 17px = 1.30769230em / 20px = 1.53846154em */
+  min-height: 20px;
+  /* 20px */
+}
+/* kendo.common.css 4720 line : selected list row color new */
+.k-popup .k-list .k-state-selected,
+.k-overflow-container .k-state-selected,
+.k-list-optionlabel.k-state-selected {
+  color: #fff;
+  background-color: #0088ff;
+}
+/* kendo.common.css 4720 line */
+.k-popup .k-list .k-state-hover,
+.k-popup .k-list .k-state-focused,
+.k-overflow-container .k-state-hover,
+.k-overflow-container .k-state-focused,
+.k-fieldselector .k-list .k-item,
+.k-list-optionlabel.k-state-focused {
+  padding: 2px 5px;
+  border-width: 0;
+  border-style: solid;
+}
+/* Page CSS
+----------------------------------*/
+.page-content {
+  padding: 0;
+  height: 100%;
+}
+.page-footer {
+  /*position: fixed;
+	right: 15px;
+	bottom: 15px;
+	margin: auto;
+	width: 100%;
+	height: 50px;
+	background: #fff;
+	border: 1px solid;*/
+}
+.align-center {
+  text-align: center;
+}
+.page-content .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.page-content .row .col-md-12 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.v-rule {
+  background-color: #ddd;
+  float: left;
+  width: 1px;
+  height: 100%;
+}
+.h-rule {
+  background-color: #ddd;
+  width: 100%;
+  height: 1px;
+}
+.h-rule-margin {
+  margin-bottom: 15px;
+}
+/* page title
+----------------------------------*/
+.page-header .title {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: inherit;
+  line-height: 20px;
+  display: inline;
+}
+.page-header .title .title-edit {
+  color: #0055aa;
+  /* #8899aa */
+}
+.page-header .title .form-title-edit {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+.page-header .title .form-title-edit .input-sm {
+  vertical-align: top;
+  margin-left: 2px;
+  margin-right: 4px;
+  border: 1px solid #aaa;
+  color: #0055aa;
+}
+.page-header .title .title-edit .fa.fa-pencil.pointer {
+  color: #aaa;
+  /* #99ccff */
+}
+.page-header .title .title-edit .fa.fa-pencil.pointer:hover {
+  color: #888;
+  /* #99ccff */
+}
+/* page title icons
+----------------------------------*/
+.title-sprite {
+  background-image: url("../images/common/coloricons-sprite.png");
+}
+.title-tree {
+  background-position: -16px 0;
+}
+.title-list {
+  background-position: -16px -24px;
+}
+.title-register {
+  background-position: -16px -48px;
+}
+.title-add {
+  background-position: -16px -72px;
+}
+.title-modify {
+  background-position: -16px -96px;
+}
+.title-alert {
+  background-position: -16px -120px;
+}
+.title-sprite {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  margin-right: 3px;
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+  vertical-align: top;
+  -ms-high-contrast-adjust: none;
+}
+/* alert title */
+.title-icon {
+  background-image: url("../images/common/coloricons-sprite.png");
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  margin-right: 3px;
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+  vertical-align: top;
+  -ms-high-contrast-adjust: none;
+  background-position: -16px -120px;
+}
+.report-info {
+  margin: 4px 10px 7px 10px;
+}
+.row.report-info .row {
+  margin-bottom: 5px;
+}
+.row.grid-title {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 5px 6px;
+  border-top: 1px solid #ddd;
+}
+/* button font */
+/* font-awesome.less */
+.btn.btn-default .fa {
+  display: inline-block;
+  padding: 2px 0;
+  color: #666;
+  /* #445566 / #336699 / #4477aa / #667788 / #556677 */
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 14px;
+  line-height: 18px;
+  text-rendering: auto;
+  text-shadow: 0 1px 0 #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.btn.btn-default .fa.fa-times {
+  padding: 1px 0;
+}
+/* btn-default
+----------------------------------*/
+.btn-default {
+  color: #111;
+  background-color: #f6f6f6;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #fff), color-stop(97%, #eee));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #fff 3%, #eee 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #fff 3%, #eee 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #fff 3%, #eee 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #fff 3%, #eee 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #fff 3%, #eee 97%);
+  /* Standard syntax */
+  border-color: #999;
+}
+.btn-default:focus,
+.btn-default.focus {
+  color: #000;
+  background-color: #deeeff;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #eef6ff), color-stop(97%, #cce5ff));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #eef6ff 3%, #cce5ff 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #eef6ff 3%, #cce5ff 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #eef6ff 3%, #cce5ff 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #eef6ff 3%, #cce5ff 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #eef6ff 3%, #cce5ff 97%);
+  /* Standard syntax */
+  border-color: #88aacc;
+}
+.btn-default:hover {
+  color: #000;
+  background-color: #ddf3ff;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #f2fbff), color-stop(97%, #cceeff));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #f2fbff 3%, #cceeff 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #f2fbff 3%, #cceeff 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #f2fbff 3%, #cceeff 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #f2fbff 3%, #cceeff 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #f2fbff 3%, #cceeff 97%);
+  /* Standard syntax */
+  border-color: #99bbdd;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.btn-default:active:hover,
+.btn-default.active:hover,
+.open > .dropdown-toggle.btn-default:hover,
+.btn-default:active:focus,
+.btn-default.active:focus,
+.open > .dropdown-toggle.btn-default:focus,
+.btn-default:active.focus,
+.btn-default.active.focus,
+.open > .dropdown-toggle.btn-default.focus {
+  color: #111;
+  background-color: #c4c4c4;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #ccc), color-stop(97%, #bbb));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #ccc 3%, #bbb 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #ccc 3%, #bbb 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #ccc 3%, #bbb 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #ccc 3%, #bbb 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #ccc 3%, #bbb 97%);
+  /* Standard syntax */
+  border-color: #999;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  background-image: none;
+}
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled.focus,
+.btn-default[disabled].focus,
+fieldset[disabled] .btn-default.focus {
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn-default .badge {
+  color: #fff;
+  background-color: #333;
+}
+/* common .btn-default css */
+.btn-default-focus {
+  color: #000;
+  background-color: #deeeff;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #eef6ff), color-stop(97%, #cce5ff));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #eef6ff 3%, #cce5ff 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #eef6ff 3%, #cce5ff 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #eef6ff 3%, #cce5ff 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #eef6ff 3%, #cce5ff 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #eef6ff 3%, #cce5ff 97%);
+  /* Standard syntax */
+  border-color: #88aacc;
+}
+.btn-default-hover {
+  color: #000;
+  background-color: #ddf3ff;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #f2fbff), color-stop(97%, #cceeff));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #f2fbff 3%, #cceeff 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #f2fbff 3%, #cceeff 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #f2fbff 3%, #cceeff 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #f2fbff 3%, #cceeff 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #f2fbff 3%, #cceeff 97%);
+  /* Standard syntax */
+  border-color: #99bbdd;
+}
+.btn-default-active {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.btn-default-active-hover-focus {
+  color: #111;
+  background-color: #c4c4c4;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #ccc), color-stop(97%, #bbb));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #ccc 3%, #bbb 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #ccc 3%, #bbb 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #ccc 3%, #bbb 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #ccc 3%, #bbb 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #ccc 3%, #bbb 97%);
+  /* Standard syntax */
+  border-color: #999;
+}
+.btn-default-active-bg {
+  background-image: none;
+}
+.btn-default-disabled {
+  background-color: #fff;
+  border-color: #ccc;
+}
+/* btn-primary
+----------------------------------*/
+.btn-primary {
+  color: #fff;
+  background-color: #2299ff;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #44aaff), color-stop(97%, #0088ff));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #44aaff 3%, #0088ff 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #44aaff 3%, #0088ff 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #44aaff 3%, #0088ff 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #44aaff 3%, #0088ff 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #44aaff 3%, #0088ff 97%);
+  /* Standard syntax */
+  border-color: #0077ee;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+  color: #fff;
+  background-color: #3399ff;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #44aaff), color-stop(97%, #3399ff));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #77bbff 3%, #3399ff 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #77bbff 3%, #3399ff 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #77bbff 3%, #3399ff 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #77bbff 3%, #3399ff 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #77bbff 3%, #3399ff 97%);
+  /* Standard syntax */
+  border-color: #1188ff;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #33aaff;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #77ccff), color-stop(97%, #33aaff));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #77ccff 3%, #33aaff 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #77ccff 3%, #33aaff 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #77ccff 3%, #33aaff 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #77ccff 3%, #33aaff 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #77ccff 3%, #33aaff 97%);
+  /* Standard syntax */
+  border-color: #3399ff;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+  color: #aabbcc;
+  background-color: #336699;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #7799bb), color-stop(97%, #336699));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #7799bb 3%, #336699 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #7799bb 3%, #336699 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #7799bb 3%, #336699 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #7799bb 3%, #336699 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #7799bb 3%, #336699 97%);
+  /* Standard syntax */
+  border-color: #225588;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+.btn-primary .badge {
+  color: #337ab7;
+  background-color: #fff;
+}
+/* common .btn-primary css */
+.btn-primary-focus {
+  color: #fff;
+  background-color: #3399ff;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #44aaff), color-stop(97%, #3399ff));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #77bbff 3%, #3399ff 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #77bbff 3%, #3399ff 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #77bbff 3%, #3399ff 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #77bbff 3%, #3399ff 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #77bbff 3%, #3399ff 97%);
+  /* Standard syntax */
+  border-color: #1188ff;
+}
+.btn-primary-hover {
+  color: #fff;
+  background-color: #33aaff;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #77ccff), color-stop(97%, #33aaff));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #77ccff 3%, #33aaff 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #77ccff 3%, #33aaff 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #77ccff 3%, #33aaff 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #77ccff 3%, #33aaff 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #77ccff 3%, #33aaff 97%);
+  /* Standard syntax */
+  border-color: #3399ff;
+}
+.btn-primary-active {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+.btn-primary-active-hover-focus {
+  color: #aabbcc;
+  background-color: #336699;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #7799bb), color-stop(97%, #336699));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #7799bb 3%, #336699 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #7799bb 3%, #336699 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #7799bb 3%, #336699 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #7799bb 3%, #336699 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #7799bb 3%, #336699 97%);
+  /* Standard syntax */
+  border-color: #225588;
+}
+.btn-primary-active-bg {
+  background-image: none;
+}
+.btn-primary-disabled {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+/* btn-small
+----------------------------------*/
+.btn-sm {
+  height: 18px;
+  padding: 0 4px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+/* btn-medium
+----------------------------------*/
+.btn-md {
+  height: 32px;
+  padding: 5px 20px 8px 20px;
+  font-size: 13px;
+  line-height: 1.3333333;
+  border-radius: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/* textinput-default
+----------------------------------*/
+.form-help {
+  color: #6699cc;
+  font-size: 12px;
+}
+.form-uploaded-file {
+  color: #5588bb;
+  /* font-size: 12px; */
+  padding: 1px 5px 0 1px;
+}
+.display-value {
+  padding-top: 5px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.form-group .btn {
+  margin-top: 3px;
+}
+/* textarea-default
+----------------------------------*/
+.checkbox label input[type=checkbox],
+.checkbox-inline input[type="checkbox"],
+.radio label input[type=radio],
+.radio-inline input[type="radio"] {
+  z-index: -100 !important;
+  width: 0 !important;
+  height: 0 !important;
+  position: fixed;
+}
+.checkbox input[type=checkbox],
+.checkbox-inline input[type="checkbox"],
+.radio input[type=radio],
+.radio-inline input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  /* 
+	label & {
+		z-index: -100 !important;
+		width: 0 !important;
+		height: 0 !important;
+		//position: fixed;
+		position: relative;
+		//we don't need it to be hoverable/clickable when inside a label
+	}
+	*/
+}
+.checkbox input[type=checkbox]:checked,
+.checkbox-inline input[type="checkbox"]:checked,
+.radio input[type=radio]:checked,
+.radio-inline input[type="radio"]:checked,
+.checkbox input[type=checkbox]:focus,
+.checkbox-inline input[type="checkbox"]:focus,
+.radio input[type=radio]:focus,
+.radio-inline input[type="radio"]:focus {
+  outline: none !important;
+}
+.checkbox input[type=checkbox] + .lbl,
+.checkbox-inline input[type="checkbox"] + .lbl,
+.radio input[type=radio] + .lbl,
+.radio-inline input[type="radio"] + .lbl {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  line-height: 19px;
+  /* origin 20px */
+  min-height: 18px;
+  min-width: 18px;
+  font-weight: normal;
+  cursor: pointer;
+}
+.checkbox input[type=checkbox] + .lbl::before,
+.checkbox-inline input[type="checkbox"] + .lbl::before,
+.radio input[type=radio] + .lbl::before,
+.radio-inline input[type="radio"] + .lbl::before {
+  cursor: pointer;
+  font-family: fontAwesome;
+  font-weight: normal;
+  font-size: 12px;
+  color: #0077ee;
+  content: "\a0";
+  background-color: #fff;
+  border: 1px solid #999;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  /*, inset 0px -15px 10px -12px rgba(0,0,0,0.05);*/
+  border-radius: 0;
+  display: inline-block;
+  text-align: center;
+  height: 16px;
+  line-height: 14px;
+  min-width: 16px;
+  margin-right: 1px;
+  position: relative;
+  top: -1px;
+}
+.checkbox input[type=checkbox]:checked + .lbl::before,
+.checkbox-inline input[type="checkbox"]:checked + .lbl::before,
+.radio input[type=radio]:checked + .lbl::before,
+.radio-inline input[type="radio"]:checked + .lbl::before {
+  display: inline-block;
+  content: '\f00c';
+  background-color: #F5F8FC;
+  border-color: #999;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+}
+.checkbox input[type=checkbox]:hover + .lbl::before,
+.checkbox-inline input[type="checkbox"]:hover + .lbl::before,
+.radio input[type=radio]:hover + .lbl::before,
+.radio-inline input[type="radio"]:hover + .lbl::before,
+.checkbox input[type=checkbox] + .lbl:hover::before,
+.checkbox-inline input[type="checkbox"] + .lbl:hover::before,
+.radio input[type=radio] + .lbl:hover::before,
+.radio-inline input[type="radio"] + .lbl:hover::before {
+  border-color: #77bbff;
+}
+.checkbox input[type=checkbox]:active + .lbl::before,
+.checkbox-inline input[type="checkbox"]:active + .lbl::before,
+.radio input[type=radio]:active + .lbl::before,
+.radio-inline input[type="radio"]:active + .lbl::before,
+.checkbox input[type=checkbox]:checked:active + .lbl::before,
+.checkbox-inline input[type="checkbox"]:checked:active + .lbl::before,
+.radio input[type=radio]:checked:active + .lbl::before,
+.radio-inline input[type="radio"]:checked:active + .lbl::before {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+.checkbox input[type=checkbox].checkbox-2 + .lbl::before,
+.checkbox-inline input[type="checkbox"].checkbox-2 + .lbl::before,
+.radio input[type=radio].checkbox-2 + .lbl::before,
+.radio-inline input[type="radio"].checkbox-2 + .lbl::before {
+  box-shadow: none;
+}
+.checkbox input[type=checkbox].checkbox-2:checked + .lbl::before,
+.checkbox-inline input[type="checkbox"].checkbox-2:checked + .lbl::before,
+.radio input[type=radio].checkbox-2:checked + .lbl::before,
+.radio-inline input[type="radio"].checkbox-2:checked + .lbl::before {
+  background-color: #F9A021;
+  border-color: #F9A021;
+  color: #FFF;
+}
+.checkbox input[type=checkbox]:disabled + .lbl::before,
+.checkbox-inline input[type="checkbox"]:disabled + .lbl::before,
+.radio input[type=radio]:disabled + .lbl::before,
+.radio-inline input[type="radio"]:disabled + .lbl::before,
+.checkbox input[type=checkbox][disabled] + .lbl::before,
+.checkbox-inline input[type="checkbox"][disabled] + .lbl::before,
+.radio input[type=radio][disabled] + .lbl::before,
+.radio-inline input[type="radio"][disabled] + .lbl::before,
+.checkbox input[type=checkbox].disabled + .lbl::before,
+.checkbox-inline input[type="checkbox"].disabled + .lbl::before,
+.radio input[type=radio].disabled + .lbl::before,
+.radio-inline input[type="radio"].disabled + .lbl::before {
+  background-color: #DDD !important;
+  border-color: #CCC !important;
+  box-shadow: none !important;
+  color: #BBB;
+}
+input + .lbl.padding-16::before {
+  margin-right: 16px;
+}
+input + .lbl.padding-12::before {
+  margin-right: 12px;
+}
+input + .lbl.padding-8::before {
+  margin-right: 8px;
+}
+input + .lbl.padding-4::before {
+  margin-right: 4px;
+}
+input + .lbl.padding-0::before {
+  margin-right: 0px;
+}
+/**
+input[type=radio] @{lbl}::before {
+	border-radius:100%;
+	font-size: 34px;
+	font-family: Helvetica, Arial, "Sans-Serif";//looks better but incosistent
+	line-height: 13px;
+}
+*/
+.checkbox-inline,
+.radio-inline {
+  padding-left: 0;
+}
+.radio input[type=radio] + .lbl::before,
+label.radio-inline input[type=radio] + .lbl::before {
+  border-radius: 100%;
+  font-size: 10px;
+  font-family: FontAwesome;
+  text-shadow: 0 0 1px #0077ee;
+  line-height: 15px;
+  height: 17px;
+  min-width: 17px;
+}
+.radio input[type=radio]:checked + .lbl::before,
+label.radio-inline input[type=radio]:checked + .lbl::before {
+  content: "\f111";
+}
+.checkbox-horizontal > .checkbox,
+.radio-horizontal > .radio {
+  display: inline-block;
+  vertical-align: middle;
+}
+.checkbox-horizontal .checkbox + .checkbox,
+.radio-horizontal .radio + .radio {
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-right: 0;
+}
+.checkbox label,
+.radio label {
+  padding-left: 0;
+}
+/* CSS3 on/off switches */
+input[type=checkbox].switch {
+  width: 55px;
+  height: 25px;
+}
+input[type=checkbox].switch + .lbl {
+  margin: 0 4px;
+  min-height: 24px;
+}
+input[type=checkbox].switch + .lbl::before {
+  font-family: 'Open Sans';
+  content: "ON\a0\a0\a0\a0\a0\a0\a0\a0\a0OFF";
+  color: #999;
+  text-shadow: 0 0 0 #999;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 17px;
+  height: 20px;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #F5F5F5;
+  -webkit-box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.15);
+  border: 1px solid #CCC;
+  text-align: left;
+  float: left;
+  padding: 0;
+  width: 52px;
+  text-indent: -21px;
+  margin-right: 0;
+  -webkit-transition: text-indent .3s ease;
+  transition: text-indent .3s ease;
+  top: auto;
+}
+input[type=checkbox].switch + .lbl::after {
+  font-family: 'Open Sans';
+  content: 'III';
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 0;
+  color: #AAA;
+  text-shadow: none;
+  background-color: #FFF;
+  border-radius: 100%;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  position: absolute;
+  top: -2px;
+  left: -3px;
+  -webkit-box-shadow: 0px 1px 1px 1px rgba(0,0,0,.3);
+  box-shadow: 0px 1px 1px 1px rgba(0,0,0,.3);
+  -webkit-transition: left .3s ease;
+  transition: left .3s ease;
+}
+input[type=checkbox].switch:checked + .lbl::before {
+  text-indent: 8px;
+  color: #FFF;
+  text-shadow: 0 0 0 #FFF;
+  background-color: #8AB2C9;
+  border-color: #6A8CA8;
+}
+input[type=checkbox].switch:checked + .lbl::after {
+  left: 34px;
+  background-color: #FFF;
+  color: #98A0A5;
+}
+input[type=checkbox].switch.switch-2 + .lbl::before {
+  content: "YES\a0\a0\a0\a0\a0\a0\a0\a0\a0NO";
+}
+input[type=checkbox].switch.switch-3 + .lbl::after {
+  font-family: FontAwesome;
+  font-size: 13px;
+  line-height: 22px;
+  content: "\f00d";
+  top: -1px;
+  text-shadow: none;
+  padding: 0;
+  text-align: center;
+  color: #BBB;
+  letter-spacing: 0;
+}
+input[type=checkbox].switch.switch-3:checked + .lbl::after {
+  content: "\f00c";
+  color: #8AB2C9;
+  text-shadow: none;
+}
+input[type=checkbox].switch.switch-4,
+input[type=checkbox].switch.switch-5 {
+  width: 60px;
+}
+input[type=checkbox].switch.switch-4 + .lbl::before,
+input[type=checkbox].switch.switch-5 + .lbl::before {
+  content: "ON\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0OFF";
+  font-size: 12px;
+  line-height: 21px;
+  height: 24px;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #8B9AA3;
+  border: 1px solid #8B9AA3;
+  color: #FFF;
+  width: 56px;
+  text-indent: -25px;
+  text-shadow: 0 0 0 #FFF;
+  display: inline-block;
+  position: relative;
+  box-shadow: none;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+input[type=checkbox].switch.switch-4 + .lbl::after,
+input[type=checkbox].switch.switch-5 + .lbl::after {
+  content: 'III';
+  font-size: 11px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  letter-spacing: 0;
+  width: 20px;
+  height: 20px;
+  line-height: 19px;
+  text-shadow: none !important;
+  color: #939393;
+  background-color: #FFF;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+input[type=checkbox].switch.switch-4:checked + .lbl::before,
+input[type=checkbox].switch.switch-5:checked + .lbl::before {
+  text-indent: 9px;
+  background-color: #468FCC;
+  border-color: #468FCC;
+}
+input[type=checkbox].switch.switch-4:checked + .lbl::after,
+input[type=checkbox].switch.switch-5:checked + .lbl::after {
+  left: 34px;
+  background-color: #FFF;
+  color: #848484;
+}
+input[type=checkbox].switch.switch-5 + .lbl::before {
+  content: "YES\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0NO";
+}
+input[type=checkbox].switch.switch-5:checked + .lbl::before {
+  text-indent: 8px;
+}
+input[type=checkbox].switch.switch-6 + .lbl {
+  position: relative;
+}
+input[type=checkbox].switch.switch-6 + .lbl::before {
+  font-family: FontAwesome;
+  content: "\f00d";
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: none;
+  border: none;
+  font-weight: lighter;
+  font-size: 16px;
+  border-radius: 12px;
+  display: inline-block;
+  background-color: #888;
+  color: #F2F2F2;
+  width: 52px;
+  height: 22px;
+  line-height: 21px;
+  text-indent: 32px;
+  -webkit-transition: background 0.1s ease;
+  transition: background 0.1s ease;
+}
+input[type=checkbox].switch.switch-6 + .lbl::after {
+  content: '';
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  border-radius: 12px;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  background-color: #F2F2F2;
+  border: 4px solid #F2F2F2;
+  -webkit-transition: left 0.2s ease;
+  transition: left 0.2s ease;
+}
+input[type=checkbox].switch.switch-6:checked + .lbl::before {
+  content: "\f00c";
+  text-indent: 6px;
+  color: #FFF;
+  border-color: #B7D3E5;
+  background-color: #FF893C;
+}
+input[type=checkbox].switch.switch-6:checked + .lbl::after {
+  left: 32px;
+  background-color: #FFF;
+  border: 4px solid #FFF;
+  text-shadow: 0 -1px 0 rgba(0, 200, 0, 0.25);
+}
+input[type=checkbox].switch.switch-7 {
+  width: 75px;
+}
+input[type=checkbox].switch.switch-7 + .lbl {
+  position: relative;
+}
+input[type=checkbox].switch.switch-7 + .lbl::before {
+  content: "OFF\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0ON";
+  font-weight: bolder;
+  font-size: 13px;
+  line-height: 20px;
+  background-color: #FFF;
+  border: 2px solid #AAA;
+  border-radius: 0;
+  box-shadow: none;
+  color: #AAA;
+  width: 74px;
+  height: 26px;
+  line-height: 22px;
+  overflow: hidden;
+  text-indent: 5px;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+input[type=checkbox].switch.switch-7 + .lbl::after {
+  content: '\f00d';
+  font-family: FontAwesome;
+  font-size: 16px;
+  position: absolute;
+  top: 3px;
+  left: 39px;
+  width: 32px;
+  height: 20px;
+  line-height: 18px;
+  text-align: center;
+  padding: 0;
+  text-indent: 0;
+  background-color: #AAA;
+  color: #FFF;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+input[type=checkbox].switch.switch-7:checked + .lbl::before {
+  color: #468FCC;
+  background-color: #FFF;
+  text-indent: -28px;
+  border-color: #6FB3E0;
+}
+input[type=checkbox].switch.switch-7:checked + .lbl::after {
+  left: 3px;
+  content: '\f00c';
+  background-color: #468FCC;
+  color: #FFF;
+}
+input[type=checkbox].switch + .lbl[data-lbl]::before {
+  content: attr(data-lbl);
+}
+input[type=checkbox].switch.btn-empty + .lbl::after {
+  content: "";
+}
+input[type=checkbox].switch.btn-rotate + .lbl::after {
+  content: "\2261";
+  line-height: 20px;
+  font-size: 17px;
+}
+input[type=checkbox].switch-4.btn-rotate + .lbl::after,
+input[type=checkbox].switch-5.btn-rotate + .lbl::after {
+  line-height: 17px;
+}
+input[type=checkbox].switch.btn-flat + .lbl::before,
+input[type=checkbox].switch.btn-flat + .lbl::after {
+  border-radius: 0 !important;
+}
+input[type=checkbox].switch.switch-4 + .lbl::before,
+input[type=checkbox].switch.switch-5 + .lbl::before {
+  text-indent: -24px;
+}
+input[type=checkbox].switch.switch-4:checked + .lbl::before,
+input[type=checkbox].switch.switch-5:checked + .lbl::before {
+  text-indent: 7px;
+}
+/* tab
+----------------------------------*/
+/*
+.nav-tabs {
+	li {
+		a {          
+			cursor: pointer;
+		}
+	}
+}
+*/
+.nav-tabs > li > a {
+  cursor: pointer;
+}
+/* tab(vertical)
+----------------------------------*/
+.tabs-left .nav-tabs {
+  float: left;
+  /*border-bottom: 0;*/
+  border-right: 1px solid #ddd;
+}
+.tabs-left .nav-tabs li {
+  float: none;
+  margin: 0;
+}
+.tabs-left .nav-tabs li a {
+  margin-right: 0;
+  /*
+                border: 0;
+                background-color: #333;
+                */
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px 0 4px 0;
+}
+.tabs-left .nav-tabs li a:hover {
+  /*background-color: #444;*/
+  border-color: #eee #eee #ddd;
+}
+.tabs-left .nav-tabs .glyphicon {
+  color: #fff;
+}
+.tabs-left .nav-tabs .active .glyphicon {
+  color: #333;
+}
+.tabs-left .tab-content {
+  margin-left: 45px;
+}
+.tabs-left .tab-content .tab-pane {
+  display: none;
+  background-color: #fff;
+  padding: 1.6rem;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-left-color: transparent;
+}
+.tabs-left .tab-content .active {
+  display: block;
+}
+.tabs-left .list-group {
+  width: 100%;
+}
+.tabs-left .list-group .list-group-item {
+  height: 50px;
+}
+.tabs-left {
+  /*border: 0;*/
+}
+.tabs-left .nav-tabs > li.active > a,
+.tabs-left .nav-tabs > li.active > a:hover,
+.tabs-left .nav-tabs > li.active > a:focus {
+  /*border: 0;*/
+  border: 1px solid #ddd;
+  border-right-color: transparent;
+}
+.tabs-left .list-group .list-group-item h4,
+.tabs-left .list-group .list-group-item span {
+  line-height: 11px;
+}
+/* fieldset-default
+----------------------------------*/
+.fieldset.collapsible {
+  border-width: 1px 0 0 0;
+  font-size: 0.9em;
+  padding-left: 0;
+}
+.fieldset.collapsible > legend {
+  padding-left: 0;
+  cursor: pointer;
+}
+.fieldset.collapsible > legend:before {
+  font-family: 'FontAwesome';
+  content: "\f0d7";
+}
+.fieldset.collapsed {
+  border-width: 1px 0 0 0;
+  font-size: 0.9em;
+}
+.fieldset.collapsed > legend:before {
+  font-family: 'FontAwesome';
+  content: "\f0da";
+}
+.fieldset {
+  border: 1px solid #000000 /*#e4e4e4*/;
+  margin: 0;
+  display: block;
+  padding: 0;
+  padding-left: 10px;
+}
+.fieldset > legend {
+  color: #000000 /*#484848*/;
+  display: block;
+  padding: 0;
+  margin: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 0;
+  width: auto;
+  font-size: 15px;
+  line-height: inherit;
+}
+/* fieldset-default
+----------------------------------*/
+.panel.fieldset.collapsible {
+  font-size: 0.9em;
+}
+.panel.fieldset.collapsible > legend {
+  padding-left: 0;
+  cursor: pointer;
+}
+.panel.fieldset.collapsible > legend:before {
+  font-family: 'FontAwesome';
+  content: "\f0d7";
+}
+.panel.fieldset.collapsed {
+  font-size: 0.9em;
+}
+.panel.fieldset.collapsed > legend:before {
+  font-family: 'FontAwesome';
+  content: "\f0da";
+}
+.panel.fieldset {
+  border: 1px solid #000000 /*#e4e4e4*/;
+  margin: 0;
+  display: block;
+  padding: 0;
+  min-width: 1px;
+  /*
+    -webkit-margin-start: 2px;
+    -webkit-margin-end: 2px;
+    -webkit-padding-before: 0.35em;
+    -webkit-padding-start: 0.75em;
+    -webkit-padding-end: 0.75em;
+    -webkit-padding-after: 0.625em;
+    min-width: -webkit-min-content;
+    */
+}
+.panel.fieldset > legend {
+  color: #484848;
+  display: block;
+  padding: 0;
+  border: 1px solid;
+  width: 100%;
+  font-size: 12px;
+  line-height: inherit;
+  /*
+    	-webkit-padding-start: 2px;
+    	-webkit-padding-end: 2px;
+    	*/
+  /*
+    	border-image-source: initial;
+    	border-image-slice: initial;
+    	border-image-width: initial;
+    	border-image-outset: initial;
+    	border-image-repeat: initial;
+    	*/
+}
+/* alert
+----------------------------------*/
+.modal.modal-alert .btn-ok {
+  color: #fff;
+  background-color: #2299ff;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #44aaff), color-stop(97%, #0088ff));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #44aaff 3%, #0088ff 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #44aaff 3%, #0088ff 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #44aaff 3%, #0088ff 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #44aaff 3%, #0088ff 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #44aaff 3%, #0088ff 97%);
+  /* Standard syntax */
+  border-color: #0077ee;
+  height: 32px;
+  padding: 5px 20px 8px 20px;
+  font-size: 13px;
+  line-height: 1.3333333;
+  border-radius: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.modal.modal-alert .btn-ok:focus,
+.modal.modal-alert .btn-ok.focus {
+  color: #fff;
+  background-color: #3399ff;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #44aaff), color-stop(97%, #3399ff));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #77bbff 3%, #3399ff 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #77bbff 3%, #3399ff 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #77bbff 3%, #3399ff 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #77bbff 3%, #3399ff 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #77bbff 3%, #3399ff 97%);
+  /* Standard syntax */
+  border-color: #1188ff;
+}
+.modal.modal-alert .btn-ok:hover {
+  color: #fff;
+  background-color: #33aaff;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #77ccff), color-stop(97%, #33aaff));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #77ccff 3%, #33aaff 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #77ccff 3%, #33aaff 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #77ccff 3%, #33aaff 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #77ccff 3%, #33aaff 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #77ccff 3%, #33aaff 97%);
+  /* Standard syntax */
+  border-color: #3399ff;
+}
+.modal.modal-alert .btn-ok:active,
+.modal.modal-alert .btn-ok.active {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+.modal.modal-alert .btn-ok:active:hover,
+.modal.modal-alert .btn-ok.active:hover,
+.modal.modal-alert .btn-ok:active:focus,
+.modal.modal-alert .btn-ok.active:focus,
+.modal.modal-alert .btn-ok:active.focus,
+.modal.modal-alert .btn-ok.active.focus {
+  color: #aabbcc;
+  background-color: #336699;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #7799bb), color-stop(97%, #336699));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #7799bb 3%, #336699 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #7799bb 3%, #336699 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #7799bb 3%, #336699 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #7799bb 3%, #336699 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #7799bb 3%, #336699 97%);
+  /* Standard syntax */
+  border-color: #225588;
+}
+.modal.modal-alert .btn-ok:active,
+.modal.modal-alert .btn-ok.active {
+  background-image: none;
+}
+.modal.modal-alert .btn-ok.disabled:hover,
+.modal.modal-alert .btn-ok[disabled]:hover,
+.modal.modal-alert .btn-ok.disabled:focus,
+.modal.modal-alert .btn-ok[disabled]:focus,
+.modal.modal-alert .btn-ok.disabled.focus,
+.modal.modal-alert .btn-ok[disabled].focus {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+.modal.modal-alert .btn-cancel {
+  color: #111;
+  background-color: #f6f6f6;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #fff), color-stop(97%, #eee));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #fff 3%, #eee 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #fff 3%, #eee 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #fff 3%, #eee 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #fff 3%, #eee 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #fff 3%, #eee 97%);
+  /* Standard syntax */
+  border-color: #999;
+  height: 32px;
+  padding: 5px 20px 8px 20px;
+  font-size: 13px;
+  line-height: 1.3333333;
+  border-radius: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.modal.modal-alert .btn-cancel:focus,
+.modal.modal-alert .btn-cancel.focus {
+  color: #000;
+  background-color: #deeeff;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #eef6ff), color-stop(97%, #cce5ff));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #eef6ff 3%, #cce5ff 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #eef6ff 3%, #cce5ff 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #eef6ff 3%, #cce5ff 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #eef6ff 3%, #cce5ff 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #eef6ff 3%, #cce5ff 97%);
+  /* Standard syntax */
+  border-color: #88aacc;
+}
+.modal.modal-alert .btn-cancel:hover {
+  color: #000;
+  background-color: #ddf3ff;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #f2fbff), color-stop(97%, #cceeff));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #f2fbff 3%, #cceeff 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #f2fbff 3%, #cceeff 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #f2fbff 3%, #cceeff 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #f2fbff 3%, #cceeff 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #f2fbff 3%, #cceeff 97%);
+  /* Standard syntax */
+  border-color: #99bbdd;
+}
+.modal.modal-alert .btn-cancel:active,
+.modal.modal-alert .btn-cancel.active {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.modal.modal-alert .btn-cancel:active:hover,
+.modal.modal-alert .btn-cancel.active:hover,
+.modal.modal-alert .btn-cancel:active:focus,
+.modal.modal-alert .btn-cancel.active:focus,
+.modal.modal-alert .btn-cancel:active.focus,
+.modal.modal-alert .btn-cancel.active.focus {
+  color: #111;
+  background-color: #c4c4c4;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #ccc), color-stop(97%, #bbb));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #ccc 3%, #bbb 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #ccc 3%, #bbb 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #ccc 3%, #bbb 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #ccc 3%, #bbb 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #ccc 3%, #bbb 97%);
+  /* Standard syntax */
+  border-color: #999;
+}
+.modal.modal-alert .btn-cancel:active,
+.modal.modal-alert .btn-cancel.active {
+  background-image: none;
+}
+.modal.modal-alert .btn-cancel.disabled:hover,
+.modal.modal-alert .btn-cancel[disabled]:hover,
+.modal.modal-alert .btn-cancel.disabled:focus,
+.modal.modal-alert .btn-cancel[disabled]:focus,
+.modal.modal-alert .btn-cancel.disabled.focus,
+.modal.modal-alert .btn-cancel[disabled].focus {
+  background-color: #fff;
+  border-color: #ccc;
+}
+/* bootstrap.css 5908 line */
+.modal.modal-alert .modal-content {
+  position: relative;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  outline: 0;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+}
+.modal.modal-alert .modal-header {
+  height: 40px;
+  padding: 8px 10px;
+  border-bottom: 1px solid #ddd;
+}
+.modal.modal-alert .modal-header .close {
+  margin-top: -2px;
+}
+.modal.modal-alert .modal-title {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  /* 1.42857143; */
+}
+.modal.modal-alert .modal-body {
+  position: relative;
+  padding: 15px;
+}
+.modal.modal-alert .modal-footer {
+  padding: 6px 8px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+.modal.modal-alert .modal-footer .btn + .btn {
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+/* bootstrap modal
+----------------------------------*/
+/* bootstrap.css 5908 line */
+.modal .modal-content {
+  position: relative;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  outline: 0;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+}
+.modal .modal-header {
+  height: 40px;
+  padding: 8px 10px;
+  border-bottom: 1px solid #ddd;
+}
+.modal .modal-header .close {
+  margin-top: -2px;
+}
+.modal .modal-title {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  /* 1.42857143; */
+}
+.modal .modal-body {
+  position: relative;
+  padding: 0;
+}
+.modal .modal-footer {
+  padding: 6px 8px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+.modal .modal-footer .btn + .btn {
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+/* ps-modal
+----------------------------------*/
+/* panel-default
+----------------------------------*/
+.panel-default {
+  border-color: #ccc;
+}
+.panel-default > .panel-heading {
+  color: #222;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ccc;
+}
+.panel-default > .panel-heading .badge {
+  color: #fff;
+  background-color: #222;
+}
+.panel-default > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ccc;
+}
+/* panel-white
+----------------------------------*/
+.panel-white {
+  border-color: #ddd;
+}
+.panel-white > .panel-heading {
+  color: #333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}
+.panel-white > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ddd;
+}
+.panel-white > .panel-heading .badge {
+  color: #f5f5f5;
+  background-color: #333;
+}
+.panel-white > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ddd;
+}
+/* grid-default
+----------------------------------*/
+/* kendo.bootstrap.css 292 line */
+.k-block,
+.k-header,
+.k-grid-header,
+.k-toolbar,
+.k-grouping-header,
+.k-draghandle,
+.k-treemap-tile,
+html .km-pane-wrapper .k-header {
+  background-color: #1166bb;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #3388cc), color-stop(97%, #1166bb));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #3388cc 3%, #1166bb 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #3388cc 3%, #1166bb 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #3388cc 3%, #1166bb 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #3388cc 3%, #1166bb 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #3388cc 3%, #1166bb 97%);
+  /* Standard syntax */
+}
+/* kendo.bootstrap.css 574 line */
+.k-state-selected,
+.k-state-selected:link,
+.k-state-selected:visited,
+.k-list > .k-state-selected,
+.k-list > .k-state-highlight,
+.k-panel > .k-state-selected,
+.k-ghost-splitbar-vertical,
+.k-ghost-splitbar-horizontal,
+.k-draghandle.k-state-selected:hover,
+.k-scheduler .k-scheduler-toolbar .k-state-selected,
+.k-scheduler .k-today.k-state-selected,
+.k-marquee-color {
+  color: #000;
+  background-color: #ccddee;
+  border-color: transparent;
+}
+.k-state-hover,
+.k-state-hover:hover,
+.k-splitbar-horizontal-hover:hover,
+.k-splitbar-vertical-hover:hover,
+.k-list > .k-state-hover,
+.k-scheduler .k-scheduler-toolbar ul li.k-state-hover,
+.k-pager-wrap .k-link:hover,
+.k-dropdown .k-state-focused,
+.k-filebrowser-dropzone,
+.k-mobile-list .k-item > .k-link:active,
+.k-mobile-list .k-item > .k-label:active,
+.k-mobile-list .k-edit-label.k-check:active,
+.k-mobile-list .k-recur-view .k-check:active {
+  color: #111;
+  background-color: #ddeeff;
+  /* border-color: transparent; */
+}
+.k-grid td.k-state-focused {
+  -webkit-box-shadow: inset 0 0 0 1px inset 0 0 7px 0 #76abd9;
+  box-shadow: inset 0 0 0 1px inset 0 0 7px 0 #76abd9;
+}
+.k-grid tr:hover .k-state-focused,
+.k-grid tr.k-state-focused:hover td {
+  background-color: #d5e5f3;
+}
+.k-grid tr:hover .k-state-selected,
+.k-grid tr.k-state-selected:hover td {
+  background-color: #bbccdd;
+}
+.k-grid tr:hover .k-state-focused.k-state-selected,
+.k-grid tr.k-state-selected:hover td.k-state-focused {
+  -webkit-box-shadow: inset 0 0 7px 0 #193c5a;
+  box-shadow: inset 0 0 7px 0 #193c5a;
+}
+/* kendo.bootstrap.css 1554 line */
+.k-header,
+.k-grid-header-wrap,
+.k-grid .k-grouping-header,
+.k-grid-header,
+.k-grouping-header .k-group-indicator,
+.k-gantt-toolbar .k-state-default {
+  border-color: #4499dd;
+}
+/* kendo.bootstrap.css 1941 line */
+.k-grid > .k-grouping-header,
+.k-grid-header:first-child,
+.k-grid-toolbar:first-child,
+.k-scheduler > .k-scheduler-toolbar:first-child {
+  border-radius: 0;
+}
+.k-grid-header:first-child th.k-header:first-child,
+thead.k-grid-header th.k-header:first-child,
+.k-rtl thead.k-grid-header th.k-header:last-child {
+  border-radius: 0;
+}
+/* kendo.bootstrap.css 1534 line */
+.k-grid tr:hover {
+  background-color: #ddeeff;
+}
+.k-grid-content a {
+  text-decoration: underline;
+}
+/* kendo.bootstrap.css 2184 line */
+.k-pager-wrap {
+  color: #222;
+}
+.k-pager-wrap > .k-link,
+.k-pager-numbers .k-link,
+.k-pager-numbers .k-state-selected {
+  border-radius: 0;
+}
+.k-grid tr td {
+  border-style: solid;
+  border-left-color: #eee;
+  border-bottom-color: transparent;
+  /* #e5e5e5; */
+}
+.k-state-selected td {
+  border-left-color: #c3d3e3 !important;
+  border-bottom-color: #bbccdd !important;
+}
+.k-pager-wrap .k-link {
+  background-color: #f6f6f6;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #fff), color-stop(97%, #eee));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #fff 3%, #eee 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #fff 3%, #eee 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #fff 3%, #eee 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #fff 3%, #eee 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #fff 3%, #eee 97%);
+  /* Standard syntax */
+  border-color: #999;
+  border-right: 0;
+}
+.k-pager-wrap .k-pager-refresh {
+  background: #f5f5f5;
+}
+.k-pager-wrap .k-link:hover {
+  color: #000;
+  background-color: #ddf3ff;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #f2fbff), color-stop(97%, #cceeff));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #f2fbff 3%, #cceeff 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #f2fbff 3%, #cceeff 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #f2fbff 3%, #cceeff 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #f2fbff 3%, #cceeff 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #f2fbff 3%, #cceeff 97%);
+  /* Standard syntax */
+  border-color: #99bbdd;
+}
+.k-pager-wrap .k-pager-nav.k-pager-last:hover {
+  border-right-color: #99bbdd;
+}
+.k-grid-header .k-link:link,
+.k-grid-header .k-link:visited,
+.k-grid-header .k-nav-current.k-state-hover .k-link,
+.k-grouping-header .k-link {
+  color: #fff;
+}
+.k-pager-wrap .k-pager-nav.k-pager-last {
+  border-radius: 0 3px 3px 0;
+  border-right-color: #999;
+  min-width: 25px;
+}
+.k-rtl .k-pager-wrap .k-pager-nav.k-pager-last {
+  border-radius: 3px 0 0 3px;
+  border-right-width: 0;
+}
+.k-pager-nav.k-pager-first {
+  border-radius: 3px 0 0 3px;
+}
+.k-rtl .k-pager-nav.k-pager-first {
+  border-radius: 0 3px 3px 0;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #999;
+  margin-right: 6px;
+}
+/* kendo.bootstrap.css 2232 line */
+/* kendo.common.css 105 line */
+.k-widget,
+.k-block,
+.k-inline-block,
+.k-draghandle {
+  border-style: none;
+  border-width: 0;
+  -webkit-appearance: none;
+}
+/* kendo.common.css 2438 line */
+.k-grid table {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* kendo.common.css 2452 line */
+.k-grid-header th.k-header,
+.k-filter-row th {
+  overflow: hidden;
+  border-style: solid;
+  border-width: 0 0 0 1px;
+  /* padding: .5em .6em .8em .6em; */
+  padding: 7px 6px 8px 6px;
+  color: #fff;
+  font-weight: 600;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  /* checkbox center align */
+}
+.k-grid-header th.k-header {
+  vertical-align: bottom;
+}
+/* kendo.common.css 2503 line */
+.k-grid-header th.k-header > .k-link {
+  display: block;
+  min-height: 30px;
+  line-height: 18px;
+  /* font-weight: 600; */
+  /* due to sorting icons*/
+  /* margin: -7px -6px -8px 0; */
+  /* grid header filter align */
+  /* padding: .5em .6em .4em 0; */
+  padding: 6px 6px 7px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+/* kendo.common.css 2516 line */
+.k-grid-header th.k-header .k-icon {
+  position: static;
+}
+/* kendo.common.css 2519 line */
+.k-grid-header th > .k-link > .k-icon {
+  vertical-align: text-bottom;
+}
+/* checkbox center align */
+th.k-header .checkbox {
+  display: inline;
+  margin: 2px;
+  padding: 0;
+}
+/* kendo.common.css 2532 line */
+.k-grid td {
+  min-width: 30px;
+  border-style: solid;
+  border-width: 0 0 1px 1px;
+  padding: 5px 8px;
+  /* .4em .6em; */
+  overflow: hidden;
+  line-height: 1.6em;
+  vertical-align: middle;
+  text-overflow: ellipsis;
+}
+/* kendo.common.css 2575 line */
+.k-grid-content {
+  border-bottom: 0 solid #ddd;
+  /* grid bottom line > pager top line */
+}
+/* kendo.common.css 2708 line */
+.k-pager-wrap {
+  clear: both;
+  overflow: hidden;
+  position: relative;
+  border-style: solid;
+  border-width: 0;
+  border-top: 1px solid #ddd;
+  line-height: 24px;
+  padding: 5px 10px;
+}
+/* kendo.common.css 2708 line */
+.k-pager-info {
+  float: right;
+  padding: 0;
+}
+/* kendo.common.css 2751 line */
+.k-pager-wrap > .k-link,
+.k-pager-numbers .k-link,
+.k-pager-numbers .k-state-selected {
+  min-width: 24px;
+  min-height: 24px;
+}
+.k-pager-wrap > .k-link {
+  float: left;
+  margin: 0;
+  height: 24px;
+  /*IE7*/
+  line-height: 18px;
+  /*IE7*/
+  /* border-radius: 1.0833em; */
+  cursor: pointer;
+  text-align: center;
+}
+.k-pager-numbers .k-link {
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+  border-style: solid;
+  /* border-width: 1px; */
+  /* border-radius: 1.0833em; */
+}
+.k-pager-wrap .k-pager-refresh {
+  float: right;
+  margin-right: 0.5em;
+  border-width: 0;
+  border-radius: 0;
+}
+/* kendo.common.css 2788 line */
+.k-pager-numbers .k-state-selected {
+  border-style: solid;
+  border-width: 1px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+  /* border-radius: 1.0833em; */
+  color: #fff;
+  background-color: #2299ff;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #44aaff), color-stop(97%, #0088ff));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradien(top, #44aaff 3%, #0088ff 97%);
+  /* For Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(top, #44aaff 3%, #0088ff 97%);
+  /* For Firefox 3.6 to 15 */
+  background-image: -ms-linear-gradient(top, #44aaff 3%, #0088ff 97%);
+  /* For IE10 */
+  background-image: -o-linear-gradient(top, #44aaff 3%, #0088ff 97%);
+  /* For Opera 11.1 to 12.0 */
+  background-image: linear-gradient(top, #44aaff 3%, #0088ff 97%);
+  /* Standard syntax */
+  border-color: #0077ee;
+}
+/* kendo.common.css 261 line */
+:root * > .k-sprite.grid-report {
+  vertical-align: text-bottom;
+}
+/* kendo.common.css 810 line */
+/* grid header filter icon */
+.k-i-funnel,
+.k-filter {
+  background-position: -96px -80px;
+}
+/* kendo.common.css 2819 line */
+/* Grid :: filtering */
+.k-header > .k-grid-filter,
+.k-header > .k-header-column-menu {
+  float: right;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+  line-height: 16px;
+  /*mvc site.css*/
+}
+/* kendo.bootstrap.css 2129 line */
+.k-grid-filter.k-state-active {
+  border-color: transparent;
+  /* dark bg #004488 / light bg #3399ff  */
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  /* 0 1px 1px rgba(255, 255, 255, 0.125) inset; */
+  box-shadow: none;
+  /* 0 1px 1px rgba(255, 255, 255, 0.125) inset; */
+}
+.k-grid-filter.k-state-active .k-filter {
+  background-position: -112px -80px;
+}
+/* grid-light
+----------------------------------*/
+/* treeview-default
+----------------------------------*/
+.fa.k-sprite,
+.fa.k-sprite::before {
+  font-size: 13px;
+  line-height: 16px;
+  vertical-align: middle;
+}
+.k-widget.k-treeview {
+  color: #111;
+}
+.k-treeview .k-in {
+  margin: 0 0 0 .15384615em;
+  /* 1px 0 1px .15384615em; */
+  padding: 3px .3076923em 3px .23076923em;
+  /* 2px .3076923em 2px .23076923em; */
+  line-height: 13px;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 1px;
+}
+.k-grid .k-hierarchy-cell .k-icon,
+.k-scheduler-table .k-icon,
+.k-treeview .k-icon {
+  background-color: transparent;
+  border-radius: 2px;
+}
+.k-treeview .k-minus,
+.k-treeview .k-minus-disabled,
+.k-treeview .k-plus,
+.k-treeview .k-plus-disabled {
+  margin-top: 0.25em;
+  margin-left: -16px;
+  cursor: pointer;
+}
+.k-icon,
+.k-tool-icon,
+.k-grouping-dropclue,
+.k-drop-hint,
+.k-column-menu .k-sprite,
+.k-grid-mobile .k-resize-handle-inner:before,
+.k-grid-mobile .k-resize-handle-inner:after,
+.k-pager-numbers .k-current-page .k-link:after,
+.k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view > .k-link:after,
+.k-gantt-views > .k-current-view > .k-link:after {
+  background-image: url('../images/dca-skin/sprite.png');
+  border-color: transparent;
+}
+.k-treeview .k-in.k-state-hover {
+  color: #000;
+}
+.k-sprite {
+  background-image: url("../images/common/coloricons-sprite.png");
+}
+.rootfolder {
+  background-position: 0 0;
+}
+.folder {
+  background-position: 0 -16px;
+}
+.pdf {
+  background-position: 0 -32px;
+}
+.html {
+  background-position: 0 -48px;
+}
+.image {
+  background-position: 0 -64px;
+}
+.report {
+  background-position: 0 -80px;
+}
+.grid-report {
+  background-position: 0 -80px;
+  vertical-align: text-bottom;
+}
+/* kendo.bootstrap.css 2253 line */
+.k-in.k-state-focused {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* treeview-line
+----------------------------------*/
+.k-treeview.treeview-line .k-top,
+.k-treeview.treeview-line .k-mid,
+.k-treeview.treeview-line .k-bot {
+  background-image: url('../images/dca-skin/treeview-nodes.png');
+  background-repeat: no-repeat;
+  margin-left: -16px;
+  padding-left: 16px;
+}
+.k-treeview.treeview-line .k-item {
+  background-image: url('../images/dca-skin/treeview-line.png');
+}
+.k-treeview.treeview-line .k-last {
+  background-image: none;
+}
+.k-treeview.treeview-line .k-top {
+  background-position: -91px 0;
+}
+.k-treeview.treeview-line .k-bot {
+  background-position: -69px -22px;
+}
+.k-treeview.treeview-line .k-mid {
+  background-position: -47px -44px;
+}
+.k-treeview.treeview-line .k-last .k-top {
+  background-position: -25px -66px;
+}
+.k-treeview.treeview-line .k-group .k-last .k-bot {
+  background-position: -69px -22px;
+}
+.k-treeview.treeview-line .k-item {
+  background-repeat: no-repeat;
+}
+.k-treeview.treeview-line .k-first {
+  background-repeat: no-repeat;
+  background-position: 0 16px;
+}
+.fa.k-sprite,
+.fa.k-sprite::before {
+  font-size: 12px;
+  line-height: 12px;
+  vertical-align: middle;
+}
+/* dropdownlist-default
+----------------------------------*/
+/* dropdownlist-light
+----------------------------------*/

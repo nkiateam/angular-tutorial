@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Loading from DB</title>
+		<link rel="stylesheet" href="../../../codebase/webix.css" type="text/css" charset="utf-8">
+		<script src="../../../codebase/webix.js" type="text/javascript" charset="utf-8"></script>
+
+		<link rel="stylesheet" type="text/css" href="../common/samples.css">
+		<script src="../common/testdata.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class='header_comment'>Loading from DB (sqllite + php)</div>
+		<div id="testA" style='height:600px'></div>
+		<div id="paging_here"></div>
+		<div id="testB" style='height:600px'></div>
+		<div id="testC" style='height:600px'></div>
+		<div id="testD" style='height:600px'></div>
+		<hr>
+		
+		<script type="text/javascript" charset="utf-8">
+
+		webix.ready(function(){
+			var payload = {
+				class_type: "ROOT",
+				class_mng_type: "AM",
+				asset_state : 'ACTIVE',
+				class_id : '0',
+				start: 0,
+				page: 1,
+				limit: 1000
+			}
+
+			var result = webix.ajax().headers({
+					"Content-type":"application/json"
+				}).post("http://192.168.233.22:9082/itg/itam/statistics/searchAssetList.do", JSON.stringify(payload), function (text) {
+				console.info(JSON.parse(text));
+
+				var response = JSON.parse(text);
+
+				grida = webix.ui({
+					container:"testA",
+					view:"datatable",
+					resizeColumn:true,
+					columns:[
+						{ id:"RNUM",	header:"순번", 			width:200 },
+						{ id:"ASSET_ID",	header:"Name", 			width:200 },
+						{ id:"CLASS_NM",	header:"Section",		width:120 },
+						{ id:"CONF_NM",	header:"Size" , 		width:130  },
+						{ id:"ASSET_STATE_NM",	header:"PC", 	width:100  },
+						{ id:"OPER_USER_NM",	header:"PC", 	width:100  },
+						{ id:"PATH_CLASS_NM",	header:"PC", 	width:100  },
+						{ id:"SERIAL_NO",	header:"PC", 	width:100  },
+						{ id:"ASSET_STATE_NM",	header:"PC", 	width:100  },
+						{ id:"TANGIBLE_ASSET_YN_NM",	header:"PC", 	width:100  },
+						{ id:"UPD_USER_ID",	header:"PC", 	width:100  },
+						{ id:"USE_USER_NM",	header:"PC",	width:100  }
+					],
+					
+					autowidth:true,
+					data: response.gridVO.rows
+				});	
+				
+				grida = webix.ui({
+					container:"testB",
+					view:"datatable",
+					resizeColumn:true,
+					columns:[
+						{ id:"RNUM",	header:"순번", 			width:200 },
+						{ id:"ASSET_ID",	header:"Name", 			width:200 },
+						{ id:"CLASS_NM",	header:"Section",		width:120 },
+						{ id:"CONF_NM",	header:"Size" , 		width:130  },
+						{ id:"ASSET_STATE_NM",	header:"PC", 	width:100  },
+						{ id:"OPER_USER_NM",	header:"PC", 	width:100  },
+						{ id:"PATH_CLASS_NM",	header:"PC", 	width:100  },
+						{ id:"SERIAL_NO",	header:"PC", 	width:100  },
+						{ id:"ASSET_STATE_NM",	header:"PC", 	width:100  },
+						{ id:"TANGIBLE_ASSET_YN_NM",	header:"PC", 	width:100  },
+						{ id:"UPD_USER_ID",	header:"PC", 	width:100  },
+						{ id:"USE_USER_NM",	header:"PC",	width:100  }
+					],
+					
+					autowidth:true,
+					data: response.gridVO.rows
+				});	
+
+				grida = webix.ui({
+					container:"testC",
+					view:"datatable",
+					resizeColumn:true,
+					columns:[
+						{ id:"RNUM",	header:"순번", 			width:200 },
+						{ id:"ASSET_ID",	header:"Name", 			width:200 },
+						{ id:"CLASS_NM",	header:"Section",		width:120 },
+						{ id:"CONF_NM",	header:"Size" , 		width:130  },
+						{ id:"ASSET_STATE_NM",	header:"PC", 	width:100  },
+						{ id:"OPER_USER_NM",	header:"PC", 	width:100  },
+						{ id:"PATH_CLASS_NM",	header:"PC", 	width:100  },
+						{ id:"SERIAL_NO",	header:"PC", 	width:100  },
+						{ id:"ASSET_STATE_NM",	header:"PC", 	width:100  },
+						{ id:"TANGIBLE_ASSET_YN_NM",	header:"PC", 	width:100  },
+						{ id:"UPD_USER_ID",	header:"PC", 	width:100  },
+						{ id:"USE_USER_NM",	header:"PC",	width:100  }
+					],
+					
+					autowidth:true,
+					data: response.gridVO.rows
+				});	
+
+				grida = webix.ui({
+					container:"testD",
+					view:"datatable",
+					resizeColumn:true,
+					columns:[
+						{ id:"RNUM",	header:"순번", 			width:200 },
+						{ id:"ASSET_ID",	header:"Name", 			width:200 },
+						{ id:"CLASS_NM",	header:"Section",		width:120 },
+						{ id:"CONF_NM",	header:"Size" , 		width:130  },
+						{ id:"ASSET_STATE_NM",	header:"PC", 	width:100  },
+						{ id:"OPER_USER_NM",	header:"PC", 	width:100  },
+						{ id:"PATH_CLASS_NM",	header:"PC", 	width:100  },
+						{ id:"SERIAL_NO",	header:"PC", 	width:100  },
+						{ id:"ASSET_STATE_NM",	header:"PC", 	width:100  },
+						{ id:"TANGIBLE_ASSET_YN_NM",	header:"PC", 	width:100  },
+						{ id:"UPD_USER_ID",	header:"PC", 	width:100  },
+						{ id:"USE_USER_NM",	header:"PC",	width:100  }
+					],
+					
+					autowidth:true,
+					data: response.gridVO.rows
+				});	
+			});
+
+
+			
+		});
+		</script>
+	</body>
+</html>

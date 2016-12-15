@@ -1,7 +1,9 @@
 {
   "globalDependencies": {
     "core-js": "registry:dt/core-js#0.0.0+20160725163759",
-    "node": "registry:dt/node#6.0.0+20160909174046",
-    "jasmine": "registry:dt/jasmine#2.2.0+20160621224255"
+    "jasmine": "registry:dt/jasmine#2.2.0+20160621224255",
+    "jquery": "registry:dt/jquery#1.10.0+20161119044246",
+    "kendo-ui": "registry:dt/kendo-ui#2016.3.1029+20161212190028",
+    "node": "registry:dt/node#6.0.0+20160909174046"
   }
 }
